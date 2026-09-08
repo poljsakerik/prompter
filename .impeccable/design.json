@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-08T16:47:00",
+  "title": "Design System: Prompter",
+  "extensions": {
+    "platform": "macOS AppKit",
+    "motion": [
+      {
+        "name": "script-playback",
+        "value": "elapsed-time based, 60 Hz timer while playing",
+        "purpose": "User-controlled script motion; timer stops when paused or hidden."
+      }
+    ],
+    "breakpoints": [
+      { "name": "compact-overlay", "value": "360pt" }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "overview": "A reading instrument, not a presentation surface. Follow the user's Notchprompt reference: a compact black reading strip paired with a conventional native macOS workspace.",
+    "keyCharacteristics": ["Text before controls", "User-controlled placement", "Native AppKit workspace"],
+    "dos": ["Do keep reading text above controls and nearest the camera.", "Do preserve native focus, selection, keyboard, and appearance behavior.", "Do make position a user choice and provide physical-top snapping."],
+    "donts": ["Don't center the overlay on the notch or add a title bar above the script.", "Don't imply that floating-window content is hidden from screen recordings."]
+  }
+}
